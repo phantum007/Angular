@@ -1,0 +1,12 @@
+<h2>My Teams</h2>
+
+<ul class="teams">
+    <li *ngFor="let team of team" >
+      <button [class.selected]="team === selectedTeams" type="button" (click)="onSelect(team)">
+      <span class="badge">{{team.id}}</span>
+      <span class="name">{{team.name}}</span>
+    </button>
+  </li>
+</ul>
+
+  <app-team-detail [team] = "selectedTeams"> </app-team-detail>
