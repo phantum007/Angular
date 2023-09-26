@@ -1,9 +1,11 @@
 runtime: python27
 api_version: 1
-threadsafe: true
+threadsafe: yes
+
 handlers:
   - url: /
-    static_files: dist/my-app/index.html
-    upload: dist/my-app/index.html
+    static_files: dist/demo-ui-app/index.html
+    upload: dist/demo-ui-app/index.html
   - url: /
-    static_dir: dist/my-app
+    static_dir: dist/demo-ui-app
+
