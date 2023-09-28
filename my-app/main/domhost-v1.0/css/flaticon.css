@@ -1,0 +1,108 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "flaticon";
+  src: url("./flaticon.ttf?cc3ad01d765ed559db45f62536bd06e3") format("truetype"), url("./flaticon.woff?cc3ad01d765ed559db45f62536bd06e3") format("woff"), url("./flaticon.woff2?cc3ad01d765ed559db45f62536bd06e3") format("woff2"), url("./flaticon.eot?cc3ad01d765ed559db45f62536bd06e3#iefix") format("embedded-opentype"), url("./flaticon.svg?cc3ad01d765ed559db45f62536bd06e3#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+  font-family: flaticon !important;
+  font-style: normal;
+  font-weight: normal !important;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.flaticon-shopping-bag:before {
+  content: "";
+}
+
+.flaticon-loupe:before {
+  content: "";
+}
+
+.flaticon-align-right:before {
+  content: "";
+}
+
+.flaticon-computer:before {
+  content: "";
+}
+
+.flaticon-secure:before {
+  content: "";
+}
+
+.flaticon-customer-service:before {
+  content: "";
+}
+
+.flaticon-cloud-network:before {
+  content: "";
+}
+
+.flaticon-vps:before {
+  content: "";
+}
+
+.flaticon-web-hosting:before {
+  content: "";
+}
+
+.flaticon-servers:before {
+  content: "";
+}
+
+.flaticon-servers-1:before {
+  content: "";
+}
+
+.flaticon-shared-folder:before {
+  content: "";
+}
+
+.flaticon-database:before {
+  content: "";
+}
+
+.flaticon-domain:before {
+  content: "";
+}
+
+.flaticon-refund:before {
+  content: "";
+}
+
+.flaticon-online-shopping:before {
+  content: "";
+}
+
+.flaticon-key:before {
+  content: "";
+}
+
+.flaticon-web-site:before {
+  content: "";
+}
+
+.flaticon-menu:before {
+  content: "";
+}
+
+.flaticon-cancel:before {
+  content: "";
+}
+
+.flaticon-speedometer:before {
+  content: "";
+}
+
+.flaticon-easy-installation:before {
+  content: "";
+}
+
+.flaticon-businessmen:before {
+  content: "";
+}

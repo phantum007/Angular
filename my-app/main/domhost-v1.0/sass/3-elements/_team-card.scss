@@ -1,0 +1,95 @@
+
+
+
+
+/*-----------------------------
+       TEAM CARD ELEMENT
+------------------------------*/ 
+.team-card {
+    &:hover {
+        .team-overlay {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .team-social {
+            bottom: 30%;
+        }
+    }
+}
+
+.team-media {
+    position: relative;
+    margin-bottom: 22px;
+    box-shadow: var(--primary-bshadow);
+
+    img {
+        width: 100%;
+    }
+}
+
+.team-overlay {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    visibility: hidden;
+    opacity: 0;
+    @include cursor__transition;
+}    
+
+.team-social {
+    position: absolute;
+    text-align: center;
+    bottom: 0%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, 50%);
+    @include cursor__transition;
+
+    li {
+        display: inline-block;
+        margin: 0px 3px;
+
+        a {
+            width: 42px;
+            height: 42px;
+            font-size: 15px;
+            line-height: 42px;
+            text-align: center;
+            color: var(--primary);
+            background: var(--white);
+            box-shadow: var(--primary-bshadow);
+            @include cursor__transition;
+
+            &:hover {
+                color: var(--white);
+                background: var(--primary);
+            }
+        }
+    }
+}
+
+.team-meta {
+    text-align: center;
+    text-transform: capitalize;
+
+    h4 {
+        font-size: 22px;
+        letter-spacing: -0.5px;
+    }
+
+    p {
+        font-size: 16px;
+        font-weight: 500;
+    }
+}    
+
+@media (max-width: 575px) {
+    .team-card {
+        width: 280px;
+        margin: 0px auto 30px;
+    }
+}

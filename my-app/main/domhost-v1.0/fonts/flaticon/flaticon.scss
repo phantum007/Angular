@@ -1,0 +1,117 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?cc3ad01d765ed559db45f62536bd06e3") format("truetype"),
+url("./flaticon.woff?cc3ad01d765ed559db45f62536bd06e3") format("woff"),
+url("./flaticon.woff2?cc3ad01d765ed559db45f62536bd06e3") format("woff2"),
+url("./flaticon.eot?cc3ad01d765ed559db45f62536bd06e3#iefix") format("embedded-opentype"),
+url("./flaticon.svg?cc3ad01d765ed559db45f62536bd06e3#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "shopping-bag": "\f101",
+    "loupe": "\f102",
+    "align-right": "\f103",
+    "computer": "\f104",
+    "secure": "\f105",
+    "customer-service": "\f106",
+    "cloud-network": "\f107",
+    "vps": "\f108",
+    "web-hosting": "\f109",
+    "servers": "\f10a",
+    "servers-1": "\f10b",
+    "shared-folder": "\f10c",
+    "database": "\f10d",
+    "domain": "\f10e",
+    "refund": "\f10f",
+    "online-shopping": "\f110",
+    "key": "\f111",
+    "web-site": "\f112",
+    "menu": "\f113",
+    "cancel": "\f114",
+    "speedometer": "\f115",
+    "easy-installation": "\f116",
+    "businessmen": "\f117",
+);
+
+.flaticon-shopping-bag:before {
+    content: map-get($flaticon-map, "shopping-bag");
+}
+.flaticon-loupe:before {
+    content: map-get($flaticon-map, "loupe");
+}
+.flaticon-align-right:before {
+    content: map-get($flaticon-map, "align-right");
+}
+.flaticon-computer:before {
+    content: map-get($flaticon-map, "computer");
+}
+.flaticon-secure:before {
+    content: map-get($flaticon-map, "secure");
+}
+.flaticon-customer-service:before {
+    content: map-get($flaticon-map, "customer-service");
+}
+.flaticon-cloud-network:before {
+    content: map-get($flaticon-map, "cloud-network");
+}
+.flaticon-vps:before {
+    content: map-get($flaticon-map, "vps");
+}
+.flaticon-web-hosting:before {
+    content: map-get($flaticon-map, "web-hosting");
+}
+.flaticon-servers:before {
+    content: map-get($flaticon-map, "servers");
+}
+.flaticon-servers-1:before {
+    content: map-get($flaticon-map, "servers-1");
+}
+.flaticon-shared-folder:before {
+    content: map-get($flaticon-map, "shared-folder");
+}
+.flaticon-database:before {
+    content: map-get($flaticon-map, "database");
+}
+.flaticon-domain:before {
+    content: map-get($flaticon-map, "domain");
+}
+.flaticon-refund:before {
+    content: map-get($flaticon-map, "refund");
+}
+.flaticon-online-shopping:before {
+    content: map-get($flaticon-map, "online-shopping");
+}
+.flaticon-key:before {
+    content: map-get($flaticon-map, "key");
+}
+.flaticon-web-site:before {
+    content: map-get($flaticon-map, "web-site");
+}
+.flaticon-menu:before {
+    content: map-get($flaticon-map, "menu");
+}
+.flaticon-cancel:before {
+    content: map-get($flaticon-map, "cancel");
+}
+.flaticon-speedometer:before {
+    content: map-get($flaticon-map, "speedometer");
+}
+.flaticon-easy-installation:before {
+    content: map-get($flaticon-map, "easy-installation");
+}
+.flaticon-businessmen:before {
+    content: map-get($flaticon-map, "businessmen");
+}

@@ -1,0 +1,63 @@
+
+
+
+
+/*========================================
+            ALL COMMON STYLE
+=========================================*/
+@import '1-helpers/typography';
+@import '1-helpers/variable';
+@import '1-helpers/mixin';
+@import '1-helpers/tags';
+@import '1-helpers/class';
+
+
+/*========================================
+            ALL COMPONENTS STYLE
+=========================================*/
+@import '2-components/alert';
+@import '2-components/section';
+@import '2-components/dropdown';
+@import '2-components/button';
+@import '2-components/nav-tabs';
+@import '2-components/slider-arrow';
+@import '2-components/slider-dots';
+@import '2-components/breadcrumb';
+@import '2-components/table';
+@import '2-components/form';
+@import '2-components/pagination';
+
+
+/*========================================
+            ALL ELEMENTS STYLE
+=========================================*/
+@import '3-elements/price-card';
+@import '3-elements/service-card';
+@import '3-elements/testi-card';
+@import '3-elements/blog-card';
+@import '3-elements/team-card';
+@import '3-elements/feature-wrap';
+@import '3-elements/contact-card';
+
+
+/*========================================
+             ALL LAYOUTS STYLE
+=========================================*/
+@import '4-layouts/single-banner';
+@import '4-layouts/header-top';
+@import '4-layouts/header';
+@import '4-layouts/price';
+@import '4-layouts/about';
+@import '4-layouts/video';
+@import '4-layouts/compare';
+@import '4-layouts/top-filter';
+@import '4-layouts/blog-widget';
+@import '4-layouts/bottom-paginate';
+@import '4-layouts/testimonial';
+@import '4-layouts/call2action';
+@import '4-layouts/clients';
+@import '4-layouts/blog';
+@import '4-layouts/faq';
+@import '4-layouts/info';
+@import '4-layouts/support';
+@import '4-layouts/footer';

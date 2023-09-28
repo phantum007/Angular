@@ -1,0 +1,117 @@
+
+
+
+
+/*-----------------------------
+        BLOG CARD ELEMENT
+------------------------------*/ 
+.blog-media {
+    margin-bottom: 25px;
+    
+    a {
+        img {
+            width: 100%;
+        }
+    }
+}
+
+
+.blog-content {
+    padding: 0px 10px;
+
+    ul {
+        @include flex__center__start;
+        flex-wrap: wrap;
+        margin-bottom: 15px;
+    
+        li {
+            display: flex;
+            align-items: center;
+            margin-right: 30px;
+    
+            &:last-child {
+                margin: 0px;
+            }
+    
+            i {
+                color: var(--primary);
+                margin-right: 8px;
+                font-size: 14px;
+            }
+    
+            a,
+            span {
+                font-size: 15px;
+                font-weight: 500;
+                white-space: nowrap;
+                text-transform: uppercase;
+            }
+    
+            a {
+                color: var(--text);
+                @include cursor__transition;
+    
+                &:hover {
+                    color: var(--primary);
+                }
+            }
+        }
+    }
+
+    h4 {
+        letter-spacing: -0.6px;
+        margin-bottom: 15px;
+
+        a {
+            color: var(--heading);
+            @include cursor__transition;
+
+            &:hover {
+                color: var(--primary);
+            }
+        }
+    }
+
+    p {
+        a {
+            font-size: 16px;
+            font-weight: 700;
+            color: var(--primary);
+            text-transform: capitalize;
+            @include cursor__transition;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+//========================================
+//      RESPONIVE BLOG CRAD STYLE
+//========================================
+@media (max-width: 575px) {
+    .blog-card {
+        width: 296px;
+    }
+
+    .blog-content {
+        margin: 0px;
+
+        ul {
+            li {
+                margin-right: 20px;
+
+                i {
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .blog-card {
+        width: 320px;
+    }
+}

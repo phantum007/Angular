@@ -1,0 +1,65 @@
+
+
+
+
+/*-----------------------------
+        FEATURE LAYOUT
+------------------------------*/ 
+.testi-part {
+    background: var(--primary-chalk);
+    padding: 115px 0px 120px;
+    position: relative;
+    z-index: 1;
+
+    &::before {
+        position: absolute;
+        content: "";
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background: url(../images/pattern/dots.png);
+        @include background__property;
+    }
+}
+
+.testi-slider {
+    .slick-slide {
+        opacity: 0.3;
+        transform: scale(0.75);
+        @include cursor__transition;
+    }
+
+    .slick-center {
+        opacity: 1;
+        transform: scale(1);
+        @include cursor__transition;
+    }
+
+    .dandik {
+        right: 50px;
+    }
+
+    .bamdik {
+        left: 50px;
+    }
+}
+
+@media (max-width: 575px) {
+    .testi-part {
+        padding: 55px 0px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .testi-part {
+        padding: 75px 0px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .testi-part {
+        padding: 95px 0px;
+    }
+}

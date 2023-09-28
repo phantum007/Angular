@@ -1,0 +1,142 @@
+
+
+
+
+/*-----------------------------
+        SECTION COMPONENT
+------------------------------*/ 
+.section-mb-120 {
+    margin-bottom: 120px;
+}
+
+.section-mb-100 {
+    margin-bottom: 100px;
+}
+
+.section-mb-95 {
+    margin-bottom: 95px;
+}
+
+.section-mb-75 {
+    margin-bottom: 75px;
+}
+
+.section-mb-50 {
+    margin-bottom: 50px;
+}
+
+.section-ptb-120 {
+    padding: 115px 0px 120px;
+}
+
+.section-ptb-100 {
+    padding: 100px 0px;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-subtitle {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--gray);
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.section-title {
+    font-size: 35px;
+    font-weight: 900;
+    letter-spacing: -1.2px;
+    text-transform: uppercase;
+
+    span {
+        color: var(--primary);
+    }
+}
+
+@media (max-width: 767px) {
+    .section-heading {
+        margin-bottom: 30px;
+    }
+
+    .section-title {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 575px) {
+    .section-mb-120 {
+        margin-bottom: 60px;
+    }
+
+    .section-mb-100 {
+        margin-bottom: 60px;
+    }
+
+    .section-mb-95 {
+        margin-bottom: 35px;
+    }
+
+    .section-mb-75 {
+        margin-bottom: 35px;
+    }
+
+    .section-mb-50 {
+        margin-bottom: 10px;
+    }    
+
+    .section-ptb-120 {
+        padding: 60px 0px;
+    }
+
+    .section-ptb-100 {
+        padding: 60px 0px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .section-mb-120 {
+        margin-bottom: 80px;
+    }
+
+    .section-mb-100 {
+        margin-bottom: 80px;
+    }
+
+    .section-mb-95 {
+        margin-bottom: 55px;
+    }
+
+    .section-mb-75 {
+        margin-bottom: 55px;
+    }
+
+    .section-mb-50 {
+        margin-bottom: 30px;
+    }   
+
+    .section-ptb-120 {
+        padding: 80px 0px;
+    }
+
+    .section-ptb-100 {
+        padding: 80px 0px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .section-mb-120 {
+        margin-bottom: 100px;
+    }
+
+    .section-mb-95 {
+        margin-bottom: 75px;
+    }
+
+    .section-ptb-120 {
+        padding: 100px 0px;
+    }
+}

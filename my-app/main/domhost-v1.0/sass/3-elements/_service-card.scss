@@ -1,0 +1,106 @@
+
+
+
+
+/*-----------------------------
+      SERVICE CARD ELEMENT
+------------------------------*/ 
+.service-card {
+    padding: 50px;
+    margin-bottom: 25px;
+    background: var(--chalk);
+    @include cursor__transition;
+
+    &:hover {
+        background: var(--primary);
+        box-shadow: var(--primary-bshadow);
+
+        i {
+            color: var(--white);
+        }
+
+        h4,
+        p {
+            color: var(--white);
+        }
+
+        a {
+            color: var(--primary-light);
+            
+            &::before {
+                color: var(--primary-light);
+            }
+
+            &:hover {
+                color: var(--white);
+
+                &::before {
+                    color: var(--white);
+                }
+            }
+        }
+    }
+
+    i {
+        font-size: 60px;
+        margin-bottom: 25px;
+        display: inline-block;
+        color: var(--primary);
+    }
+
+    h4 {
+        font-size: 22px;
+        font-weight: 900;
+        margin-bottom: 15px;
+        text-transform: uppercase;
+    }
+
+    p {
+        margin-bottom: 25px;
+    }
+
+    a {
+        font-size: 16px;
+        font-weight: 700;
+        text-transform: uppercase;
+        position: relative;
+        color: var(--primary);
+        @include cursor__transition;
+
+        &:hover {
+            color: var(--primary-deep);
+
+            &::before {
+                right: -25px;
+            }
+        }
+
+        &::before {
+            position: absolute;
+            content: "\f061";
+            top: 50%;
+            right: -20px;
+            font-size: 14px;
+            font-weight: 900;
+            font-family: "Font Awesome 5 Free";
+            color: var(--primary);
+            transform: translateY(-50%);
+            @include cursor__transition;
+        }
+    }
+}
+
+//========================================
+//     RESPONIVE SERVICE CARD STYLE
+//========================================
+@media (max-width: 575px) {
+    .service-card {
+        padding: 35px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .service-card {
+        padding: 30px;
+    }
+}

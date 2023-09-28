@@ -1,0 +1,65 @@
+
+
+
+
+//========================================
+//      BREADCRUMB COMPONENT STYLE
+//========================================
+.breadcrumb {
+    justify-content: center;
+    align-items: center;
+    background: none;
+    margin: 0px;
+
+    .active {
+        color: var(--light);
+    }
+}
+
+.breadcrumb-item {
+    font-size: 18px;
+    font-weight: 500;
+    margin-right: 18px;
+    padding-right: 18px;
+    position: relative;
+    text-transform: capitalize;
+
+    a {
+        color: var(--primary-light);
+
+        &:hover {
+            color: var(--light);
+            text-decoration: underline;
+        }
+    }
+}
+
+.breadcrumb-item.active {
+    padding-right: 0px;
+    margin-right: 0px;
+
+    &::after {
+        display: none;
+    }
+}
+
+.breadcrumb-item+.breadcrumb-item {
+    padding-left: 0px;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    display: none;
+}
+
+.breadcrumb-item::after {
+    position: absolute;
+    content: "\f054";
+    top: 50%;
+    right: -4px;
+    font-size: 11px;
+    line-height: 11px;
+    font-weight: 900;
+    font-family: "Font Awesome 5 Free";
+    color: var(--primary-light);
+    transform: translateY(-50%);
+}

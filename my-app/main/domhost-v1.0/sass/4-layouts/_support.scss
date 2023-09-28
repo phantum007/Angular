@@ -1,0 +1,151 @@
+
+
+
+
+/*-----------------------------
+        SUPPORT LAYOUT
+------------------------------*/ 
+.support-part {
+    padding: 80px 0px 88px;
+    position: relative;
+    z-index: 1;
+    background: var(--gradient);
+
+    &::before {
+        position: absolute;
+        content: "";
+        z-index: -1;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        background: url(../images/pattern/plane.png);
+    }
+}
+
+.support-image {
+    text-align: center;
+
+    img {
+        width: 260px;
+    }
+}
+
+.support-content {
+    h2 {
+        font-size: 40px;
+        font-weight: 900;
+        color: var(--white);
+        margin-bottom: 20px;
+        text-transform: uppercase;
+    }
+
+    p {
+        color: var(--white);
+        margin-bottom: 40px;
+    }
+}
+
+.support-info {
+    margin-bottom: 40px;
+    @include flex__center__start;
+
+    li {
+        margin-right: 50px;
+
+        span {
+            font-size: 16px;
+            font-weight: 500;
+            margin-bottom: 5px;
+            color: var(--primary-light);
+            display: block;
+            text-transform: uppercase;
+        }
+
+        a {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--primary-light);
+            @include cursor__transition;
+
+            &:hover {
+                color: var(--white);
+            }
+        }
+    }
+}
+
+.support-btn {
+    @include flex__center__start;
+
+    .btn {
+        margin-right: 25px;
+    }
+}
+
+@media (max-width: 575px) {
+    .support-part {
+        padding: 50px 0px;
+    }
+
+    .support-content {
+        text-align: center;
+
+        p {
+            margin-bottom: 25px;
+        }
+    }
+
+    .support-info {
+        flex-direction: column;
+        margin-bottom: 15px;
+
+        li {
+            margin-right: 0px;
+            margin-bottom: 25px;
+        }
+    }
+
+    .support-btn {
+        flex-direction: column;
+
+        .btn {
+            margin-right: 0px;
+            margin-bottom: 25px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .support-image {
+        margin-bottom: 30px;
+    }
+
+    .support-content {
+        h2 {
+            font-size: 35px;
+        }
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .support-part {
+        padding: 80px 0px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .support-part {
+        padding: 92px 0px 100px;
+    }
+
+    .support-image img {
+        width: 200px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .support-part {
+        padding: 72px 0px 85px;
+    }
+}
