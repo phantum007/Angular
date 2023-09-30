@@ -4,10 +4,13 @@ steps:
       - build
       - '-t'
       - '$_GCR_HOSTNAME/$PROJECT_ID/$_SERVICE_NAME'
-      - .
+      - ./my-app      
+      - '-f'
+      - Dockerfile
   - name: gcr.io/cloud-builders/docker
     args:
       - push
+      - ./my-app      
       - '$_GCR_HOSTNAME/$PROJECT_ID/$_SERVICE_NAME'
   - name: gcr.io/google.com/cloudsdktool/cloud-sdk
     args:
