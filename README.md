@@ -1,3 +1,3 @@
 # Angular
 # CICD
-# from sources
+# from source
