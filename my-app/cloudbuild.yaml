@@ -1,15 +1,18 @@
 steps:
   - name: gcr.io/cloud-builders/docker
+    dir: './my-app/'
     args:
       - build
       - '-t'
       - '$_GCR_HOSTNAME/$PROJECT_ID/$_SERVICE_NAME:$COMMIT_SHA'
       - .
   - name: gcr.io/cloud-builders/docker
+    dir: './my-app/'
     args:
       - push
       - '$_GCR_HOSTNAME/$PROJECT_ID/$_SERVICE_NAME:$COMMIT_SHA'
   - name: gcr.io/google.com/cloudsdktool/cloud-sdk
+    dir: './my-app/'
     args:
       - run
       - deploy
